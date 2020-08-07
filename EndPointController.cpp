@@ -58,7 +58,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	IMMDeviceCollection* pDevices;
 	// Enumerate the output devices.
-	hr = pEnum->EnumAudioEndpoints(eRender, DEVICE_STATE_ACTIVE, &pDevices);
+	hr = pEnum->EnumAudioEndpoints(eCapture, DEVICE_STATE_ACTIVE, &pDevices);
 
 	if (!SUCCEEDED(hr))
 		return errorRet;
